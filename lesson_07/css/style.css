@@ -1,0 +1,68 @@
+body {
+margin: 0;
+padding: 0;
+
+}
+.flex-lesson-cjntainer {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    background-color: aquamarine;
+    justify-content: space-around;
+    gap: 0;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex-lesson-cjntainer div {
+    
+    width: 150px;
+    height: 150px;
+    background-color:aqua ;
+    font-size: 36px;
+}
+.box {
+    margin-top: 20px 0;
+    display: flex;
+    
+    background-color:coral ;
+    font-size: 36px;
+    gap: 20px;
+}
+.box div {
+    width: 200px;
+    height: 100%;
+    align-self: start;
+    background-color:rgb(32, 113, 179) ;
+    
+}
+
+.vertical {
+    display: flex;
+    height: 800px;
+    background-color:blueviolet;
+    flex-direction: column;
+}
+.vertical  div:first-child {
+    /* display: flex; */
+    /* height: 800px; */
+    background-color:brown;
+    /* flex-direction: column; */
+    width: 100%;
+    flex-grow: 2;
+
+}
+.vertical  div:last-child {
+    /* display: flex; */
+    /* height: 800px; */
+    background-color:rgb(128, 33, 192);
+    /* flex-direction: column; */
+    width: 100%;
+    flex-grow: 1;
+
+}
+
+
+
+

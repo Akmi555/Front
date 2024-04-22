@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Blocks</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+        }
+        .block {
+            height: 300px;
+            width: calc(20% - 10px); /* 20px for margin between blocks */
+            margin: 0 10px; /* 10px margin on both sides */
+            display: inline-block;
+            /* display: flex; */
+        }
+
+        .block_red {
+            background-color: red;
+        }
+
+        .block_green {
+            background-color: green;
+        }
+
+        .block_blue {
+            background-color: blue;
+        }
+
+        .block_yellow {
+            background-color: yellow;
+        }
+
+        .block_black {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="block block_red"></div>
+    <div class="block block_green"></div>
+    <div class="block block_blue"></div>
+    <div class="block block_yellow"></div>
+    <div class="block block_black"></div>
+</body>
+</html>

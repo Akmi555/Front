@@ -1,0 +1,19 @@
+header {
+    position: relative;
+    margin: 50px auto;
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+
+}
+
+div {
+    height: 80px;
+    width: 80px;
+    background-color: chartreuse;
+    position: absolute;
+    top: 0;
+    left: calc((200px-80px) /2);
+
+
+}

@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+header { 
+    width: 50%;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+nav {
+    width: 50%;
+    height: 50vn;
+    background-color: green;  
+}
+ 

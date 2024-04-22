@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./steles/style.css">
+    <title>ToDo</title>
+    <style>
+        /* Add styles for the new window */
+       .yellow-window {
+            background-color: yellow;
+            padding: 8px;
+            border-radius: 4px;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">ToDo</h1>
+    <main class="todo-list">
+        <div class="action">
+            <input class="task-input" type="text" id="input-field">
+            <button class="btn" onclick="displayText()">Создать</button>
+        </div>
+        <ul class="list">
+            <li class="list-item">Сделать домашку</li>
+            <li class="list-item" id="second-item"></li>
+        </ul>
+        <!-- New yellow window for displaying text -->
+        <div class="yellow-window" id="text"></div>
+    </main>
+
+    <script>
+        /**
+         * Displays the user's input in the yellow window.
+         */
+        function displayText() {
+            // Get the input element and the output element
+            const inputElement = document.getElementById('input-field');
+            const outputElement = document.getElementById('text');
+
+            // Get the user's input value
+            const inputValue = inputElement.value;
+
+            // Create a new paragraph element
+            const newItem = document.createElement('p');
+
+            // Set the text content of the new paragraph element to the user's input value
+            newItem.textContent = inputValue;
+
+            // Append the new paragraph element to the output element
+            outputElement.appendChild(newItem);
+
+            // Clear the input field
+            inputElement.value = '';
+        }
+    </script>
+</body>
+</html>

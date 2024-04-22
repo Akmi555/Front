@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор BMI</title>
+    <style>
+        /* Стилизация формы (ваш дизайн может отличаться) */
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #007bff;
+            color: #333;
+            padding: 20px; */
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="bmiForm">
+        <div>
+            <label for="height">Рост (см):</label>
+            <input type="number" id="height" required>
+        </div>
+        <div>
+            <label for="weight">Вес (кг):</label>
+            <input type="number" id="weight" required>
+        </div>
+        <button type="button" onclick="calculateBMI()">Рассчитать BMI</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        function calculateBMI() {
+            const height = parseFloat(document.getElementById('height').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+
+            if (isNaN(height) || isNaN(weight)) {
+                document.getElementById('result').innerHTML = 'Пожалуйста, введите корректные значения роста и веса.';
+                return;
+            }
+
+            const bmi = weight / ((height / 100) ** 2);
+            const bmiCategory = getBMICategory(bmi);
+
+            document.getElementById('result').innerHTML = `Ваш BMI: ${bmi.toFixed(2)} (${bmiCategory})`;
+        }
+
+        function getBMICategory(bmi) {
+            if (bmi < 18.5) {
+                return 'Недостаточный вес';
+            } else if (bmi >= 18.5 && bmi < 24.9) {
+                return 'Нормальный вес';
+            } else if (bmi >= 25 && bmi < 29.9) {
+                return 'Избыточный вес';
+            } else {
+                return 'Ожирение';
+            }
+        }
+    </script>
+</body>
+</html>

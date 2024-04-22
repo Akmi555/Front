@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./steles/style.css">
+    <title>ToDo</title>
+    <style>
+        /* Добавляем стили для нового окна */
+        .yellow-window {
+            background-color: yellow;
+            padding: 8px;
+            border-radius: 4px;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">ToDo</h1>
+    <main class="todo-list">
+        <div class="action">
+            <input class="task-input" type="text" id="input-field">
+            <button class="btn" onclick="displayText()">Создать</button>
+        </div>
+        <ul class="list">
+            <li class="list-item">Сделать домашку</li>
+            <li class="list-item" id="second-item"></li>
+        </ul>
+        <!-- Новое желтое окно для текста -->
+        <div class="yellow-window" id="text"></div>
+    </main>
+
+    <script>
+        function displayText() {
+            const inputElement = document.getElementById('input-field');
+            const outputElement = document.getElementById('text'); // Используем новое желтое окно
+            const inputValue = inputElement.value;
+
+            // Создаем новый элемент списка
+            const newItem = document.createElement('p');
+            newItem.textContent = inputValue;
+
+            // Добавляем новый элемент в окно
+            outputElement.appendChild(newItem);
+
+            inputElement.value = ''; // Очищаем поле ввода
+        }
+    </script>
+</body>
+</html>

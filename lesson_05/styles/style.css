@@ -1,0 +1,41 @@
+button {
+    display: block; 
+    margin: 100px auto;
+}
+ 
+div {
+    height: 100px;
+    width: 100px;
+    margin: 10px;background-color: aquamarine;
+ }
+  #b2a {
+    position: absolute;
+    background-color: chocolate;
+    top: 0;
+    left: 0;
+}    
+
+  #b2 {
+    /* margin-top: 80px; */
+    position: relative;
+    top: -30px;
+    /* left: 30px; */
+    right: 30px;
+    /* bottom: 30px; */
+}
+
+#b3 {
+    background-color: blueviolet;
+    /* position: relative; */
+}
+
+#b4 {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+

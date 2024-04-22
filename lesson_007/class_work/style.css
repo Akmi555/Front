@@ -1,0 +1,70 @@
+ .box {
+    display: flex;
+    justify-content: space-between; /*заполняет пространство*/
+    gap: 20px;
+
+}
+
+.b1 {
+    /* background-image: ;
+    width: 50px;
+    height: 70px; */
+    background-image: url(../images);
+}
+.b2 {
+    /* width: 50px;
+    height: 70px; */
+    background-image: url(../);
+}
+.b31 {
+    /* width: 50px;
+    height: 70px; */
+    background-image: url(../);
+}
+.b4 {
+    position: relative;
+    width: 33%;
+    min-width: 150px;
+    max-width: 400px;
+    height: 50vw; /*меняется высота */
+    min-height: 210px;
+    max-height: 560px;
+
+    background-size: cover;
+    
+}
+
+.y-block {
+    display: flex;
+    width: 50px;
+    background-color: yellow;
+    position: absolute;  /*привязываем к блоку чтобы не прыгал*/
+    /* margin-right: 0; */
+    top: 5px;
+    right: 5px;
+    /* alagn-items: center; */
+justify-content: center;
+
+}
+h2 {
+    /* font-weight: ; */
+    color: white;
+    /* margin-top: 80%;
+    text-align: left; */
+}
+h4 {
+    color: yellow;
+    text-transform: uppercase; /*делает заглавные буквы */
+}
+h5 {
+    color: white;
+    /* text-transform: uppercase; делает заглавные буквы */
+}
+
+.text {
+    /* margin-top: 100%; */
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0) ,rgba(0, 0, 0, 0.733)); /*сверху вниз*/
+    display: block;
+}

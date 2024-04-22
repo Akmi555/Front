@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin-top: 50px;   /*  отступ от верха  */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin: 50px 50px 50px 50px;   /* верх право низ лево*/
+    margin: 50px 50px;             /* верх- низ     право-лево*/
+    margin: 50px 50px 50px;        /* верх  право-лево  низ */
+    border: 10px solid yellow;
+}
